@@ -349,7 +349,7 @@ const Index = () => {
               </div>
 
               <Button
-                onClick={() => calculateGasCosts(walletAddress, "exekK53YRdHz42FMiwI6rkoIN45VTY7u")}
+                onClick={() => calculateGasCosts(walletAddress, process.env.ALCHEMY_API_KEY)}
                 disabled={!walletAddress.trim() || isCalculating}
                 className="w-full bg-gradient-to-r from-green-400 to-green-600 hover:from-green-500 hover:to-green-700 hover:shadow-lg hover:shadow-green-500/30 transition-all duration-300 font-semibold text-white"
               >
